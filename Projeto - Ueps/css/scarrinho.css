@@ -1,0 +1,115 @@
+		*, html { 
+            font-family: Helvetica, arial, sans-serif; 
+            margin: 0 0;
+             padding: 0 0; 
+        }
+
+        body{ 
+            margin: 0 0; padding: 0 0; background:
+            linear-gradient(
+              rgba(0, 0, 0, 0.5), 
+              rgba(0, 0, 0, 0.5)
+            ),
+            url(https://scontent.fccm4-1.fna.fbcdn.net/v/t1.6435-9/94625689_111288287228231_4155613242380517376_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=GPuE6fNrBA8AX_yW1Qs&_nc_ht=scontent.fccm4-1.fna&oh=3ac072af40fa6ca8e975ce0ea9672c4c&oe=61687859);
+        }
+		h1 { 
+            color: white; 
+            letter-spacing:2px ;text-align:center;
+            font-size:46px;font-family:Helvetica, arial,sans-serif;
+            text-transform:uppercase;
+            margin:30px 0 0;
+            border: 2px solid dodgerblue;
+        }
+		div#container{ margin: 0 auto; width:960px; }
+
+		p{
+             margin: 10px 10px;
+             }
+		ul#produtos{
+             list-style:none; 
+            }
+
+        div#carrinho-top{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(89, 0, 255));
+			width: 960px;
+			color: #fff;
+			border-bottom:1px dashed #fff;
+			opacity: .8;
+			position:relative;
+	 	}
+		div#carrinho-info{ padding: 10px; }
+		div#carrinho-container{
+			height:270px;
+			position:absolute;
+			width:240px;
+			background-color:#fff;
+			border:2px solid rgb(0, 92, 197), rgb(89, 0, 255);
+			display:none;
+		}
+
+		div#carrinho-container ul{ overflow:auto; height:200px; margin: 10px; list-style:none; }
+		div#carrinho-container ul li{ color:#333; font-size:12px; border-bottom:1px dotted #ccc; text-align:center; margin:20px; }
+
+		ul#produtos li{
+			float: left;
+			background-color:#fff;
+			-moz-box-shadow: 5px 5px 5px rgb(0, 0, 0);
+			  -webkit-box-shadow: 5px 5px 5px rgb(0, 0, 0);
+			  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+			padding:10px;
+			margin:15px;
+			width:270px;
+			text-align:center;
+		}
+		ul#produtos li h3{
+			margin: 6px 0 6px 0;
+			color: #594A40;
+			background-color:#f2f2f2;
+			padding:6px;
+		}
+		p.preco-de{
+			color:dodgerblue;
+			text-decoration:line-through;
+			font-size:11px;
+		}
+		p.preco-por{
+			color: #594A40;
+			font-weight:900;
+		}
+		.ui-state-hover{
+			height:160px;
+			border:4px dashed #000;
+		}
+
+		p#limpar, #limpar, a#limpar{
+			text-align: center;
+			font-size: 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			text-decoration: none;
+			list-style: none;
+			color: WHITE;
+			background-color: dodgerblue;
+			border-radius: 10px;
+			border: 10px;
+		}
+
+		.inputVoltar{
+			color: white;
+			text-align: end;
+			background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(89, 0, 255));
+			border: 1px solid black;
+			padding: 1px;
+			font-family: Arial, Helvetica, sans-serif;
+			
+		}
+
+		.inputVoltar:hover {
+			cursor: pointer;
+			opacity: 0.8;
+			background-color: rgb(23, 109, 196);
+		}
+
+		form#voltar {
+			color: black;
+			text-align: end;
+		}

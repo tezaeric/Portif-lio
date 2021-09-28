@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ueps - Carrinho</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="css/scarrinho.css">
+        <link rel="shortcut icon" href="img/2.jpg" type="image/x-icon">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+
+        
+    </head>
+    <body>
+		<div id="container">
+
+	        <div id="carrinho-top">
+				<div id="carrinho-info">
+					<p>Arraste produtos para esta área</p>
+				</div>
+                
+				<div id="carrinho-container">
+	            	<ul id="carrinho-produtos">
+						<li class="adicione">Arraste produtos para esta área</li>
+						
+					</ul>
+					
+					<p id="limpar"><a href="carrinho.html" id="limpar"><B>Limpar</B></a></p>
+					<p id="limpar"><a href="pagamento.html" id="limpar"><B>Pagamento</B></a></p>
+
+				</div>
+				
+				<form id="voltar"> 
+					<input type="button" value="Voltar" onClick="history.go(-1)" class="inputVoltar"> 
+					<input type="button" value="Avançar" onCLick="history.forward()" class="inputVoltar">  
+					<input type="button" value="Atualizar" onClick="history.go(0)" class="inputVoltar"> 
+				</form>
+
+	        </div>
+
+				<h1 id="c2">Ueps - Carrinho de Compras</h1>
+			<ul id="produtos">
+				<li class="produto-dd"><input type="hidden" class="produto-id" value="1" /><h3>Iog. com bolinha colorida Bomtlê</h3><p><img src="img/promoções/promo1.jpg" width="75" height="90" /></p><p class="preco-de">De: R$12,00</p><p class="preco-por">4 unds por R$10,00</p></li>
+				<li class="produto-dd"><input type="hidden" class="produto-id" value="2" /><h3>Salamitos Seara</h3><p><img src="img/promoções/promo 2.jpg" width="75" height="90" /></p><p class="preco-de">De: R$12,00</p><p class="preco-por">7 unds por R$10,00</p></li>
+				<li class="produto-dd"><input type="hidden" class="produto-id" value="3" /><h3>Achocolatado PiraKids 100ml</h3><p><img src="img/promoções/promo 3.jpg" width="75" height="90" /></p><p class="preco-de">De: R$12,00</p><p class="preco-por">10 unds por R$10,00</p></li>
+				<li class="produto-dd"><input type="hidden" class="produto-id" value="4" /><h3>Req. bisnaga Vigor 1kg</h3><p><img src="img/promoções/promo 4.jpg" width="75" height="90" /></p><p class="preco-de">De: R$13,99</p><p class="preco-por">1kg por R$11,99</p></li>
+				<li class="produto-dd"><input type="hidden" class="produto-id" value="5" /><h3>Apresuntado Lactovale</h3><p><img src="img/promoções/promo 5.jpg"width="75" height="90" /></p><p class="preco-de">De: R$12,00</p><p class="preco-por">4 unds por R$11,00</p></li>
+			</ul>
+
+			</div>
+
+
+    <script type="text/javascript">
+	var timerCarrinho = '';
+    $(function(){
+
+		$(window).scroll(function(){
+            var wtop	 	= $(this).scrollTop();
+			var carrinho 	= $('#carrinho-top');
+			var container	= $('#container');
+			var cheight 	= $(carrinho).height();
+            if( wtop > ( cheight / 2 ) )
+            {
+				$(container).css('margin-top', cheight+'px');
+                $(carrinho)
+					.css({
+	                    position: 'absolute'
+	                })
+					.animate({
+						marginTop: ( wtop - cheight ) + 'px'
+					}, 100);
+            }
+            else
+            {
+				$(container).css('margin-top', 0);
+                $(carrinho)
+					.stop(true, true)
+					.css({
+	                    position: 'relative',
+						marginTop: 0
+	                });
+            }
+        });
+
+		$('#produtos li').draggable({
+			helper: 'clone',
+			start: function()
+			{
+				clearTimeout( timerCarrinho );
+				$('#carrinho-container').show();
+			}
+		});
+
+		$('#carrinho-produtos').droppable({
+			hoverClass: 'ui-state-hover',
+			accept: '.produto-dd',
+			drop: function( event, ui )
+			{
+				$(this).find('.adicione').remove();
+				var cod = ui.draggable.find('.produto-id').val();
+				if( $(this).find('#clone-'+cod).length == 0 )
+				{
+					$('<li id="clone-'+cod+'" style="display:none;"></li>').html(ui.draggable.html()).prependTo( this );
+					$(this).find('li:first').slideDown();
+					var total_produtos = $(this).find('li').length;
+					$('#carrinho-info').html('<p>' + total_produtos + ' produto' + ( total_produtos > 1 ? 's' : '' ) + '</p>' );
+				}
+			}
+		});
+
+		$('#carrinho-container').mouseenter(function(){
+			clearTimeout( timerCarrinho );
+		});
+
+		$('#carrinho-container').mouseleave(function(){
+			var carrinho = $(this);
+			timerCarrinho = setTimeout( function(){
+				$(carrinho).slideUp();
+			}, 5000 );
+		});
+
+
+    });
+    </script>
+
+    </body>
+</html>
