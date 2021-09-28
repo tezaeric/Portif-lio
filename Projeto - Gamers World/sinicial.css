@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: #161616;
+}
+
+h1#logo {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+}
+
+h1#logo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(153, 0, 0);
+}
+
+div#post1 {
+    border: 1px solid red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1#post1 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: #0e0d0d;
+}
+
+p#cpost1 {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: #0e0d0d;
+}
+
+p#ccpost1 {
+    color: white;
+    font-size: 15px;
+    background-color: #0e0d0d;
+}
+
+p#ccpost2 {
+    color: white;
+    background-color: #0e0d0d;
+    font-size: 15px;
+}
+
+h1#post2, h1#ccpost2, h1#cpost2 {
+    color: white;
+    background-color: #0e0d0d;
+}
+
+p#cpost2 {
+    color: white;
+    background-color: #0e0d0d;
+}
+
+h1#post3 {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    background-color: #0e0d0d;
+}
+
+h2#cpost3 {
+    text-align: center;
+    color: white;
+    text-align: justify;
+    background-color: #0e0d0d;
+}
+
+div#post3 {
+    border: 1px solid red;
+}
+
+img#post3 {
+    align-items: center;
+    text-align: center;
+}
+
+p#imgp3 {
+    text-align: center;
+}
+
+p#ppost3 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-color: #0e0d0d;
+}
+
