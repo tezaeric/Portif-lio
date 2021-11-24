@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url(../fontes/idroid.otf);
+}
+@font-face {
+    font-family: "oswald";
+    src: url(../fontes/oswald.ttf);
+}
+
+:root {
+    --cor1: #000000;
+    --cor2: #161616;
+    --cor3: #16161616;
+    --cor4: #ffffff;
+    --cor5: red;
+}
+
+img#menu1 {
+    width: 10px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, black, rgb(77, 0, 80));
+}
+
+header {
+    background-image: linear-gradient(to right, black, #204);
+    width: 100%;
+}
+
+header > h1 {
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    font-family: "idroid";
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+div.body {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+nav {
+    background-image: linear-gradient(to right, black, #204);
+}
+
+nav > ul {
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline;
+    padding: 5px;
+}
+
+nav > ul > li > a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-family: "oswald";
+    font-weight: normal;
+    font-size: 15px;
+}
+
+nav > ul > li > a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #161616;
+    color: red;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+div.body > h2 {
+    text-align: start;
+    color: var(--cor1);
+    font-family: "idroid";
+    font-weight: normal;
+    font-size: 20px;
+}
+
+img.p402_hide {
+   width: 70%;
+}
+
+figure {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    left: 35%;
+}
+
+div.body {
+    max-width: 50%;
+    margin:auto;
+    box-shadow: 2px 2px 6px black;
+}
+
+p {
+    font-family: "oswald";
+    font-weight: normal;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "idroid";
+    text-align: start;
+    font-weight: normal;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+div.body > ul {
+    color: darkred;
+    font-size: 15px;
+    font-family: "oswald";
+    list-style: "\2714\00A0";
+}
+
+div.body > ul:hover {
+    font-size: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+p > em {
+    color: red;
+}
+
+p > em:hover {
+    cursor: pointer;
+    color: darkred;
+    font-size: 17px;
+    transition: 0.2s;
+    
+}
+
+aside > ul > li > a#aside {
+    font-size: 20px;
+}
+
+aside > ul > li {
+    padding-right: 30px;
+}
+
+aside > ul > li, a#aside {
+    text-align: center;
+    color: black;
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    margin: auto;
+}
+
+aside > ul > li,a#aside:hover, img#aside:hover {
+    color: darkred;
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+img#aside {
+    
+    width: 20px;
+}
+
+
+
+aside {
+    font-family: "oswald";
+    padding-bottom: 5px;
+    
+}
+
+aside > ul {
+    
+    width: 98%;
+}
+
+aside > h4 {
+    font-family: "idroid";
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+div.body > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+div.body > a:hover {
+    font-size: 16px;
+    transition: 0.2s;
+    color: darkred;
+    text-decoration: underline;
+}
+
+main > div#mf > ul#mf {
+    width: 500px;
+    background-color: white;
+}
+
+main > div#mf > ul#mf {
+    display: list-item;
+    width: 53.1%;
+    height: 50%;
+}
+
+main > div#mf > ul#mf {
+    position: relative;
+    left: 22.5%;
+    margin: 1%;
+}
+
+h1#mf {
+    font-family: "idroid";
+    text-align: center;
+    background-color: #15012A;
+    color: white;
+}
+
+li#mf {
+    list-style: none;
+    position: relative;
+}
+
+a#mf {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+
+p#mf {
+    font-size: 20px;
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    text-align: justify;
+    letter-spacing: 0.2%;
+}
+
+p#mf:hover {
+    font-size: 21px;
+    color: darkred;
+    transition: 0.5s;
+    letter-spacing: 0.2%;
+    border-spacing: 0.1%;
+}
+
+
+main > div#mf > ul#mf > li#mf > a#mf {
+    font-size: 20px;
+    color: black;
+    font-family: "oswald";
+}
+
+main > div#mf > ul#mf > li#mf > a#mf > img#mf {
+    width: 12%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div#mf, ul#mf, li#mf, img#mf, p#mf, a#mf {
+    margin: auto;
+}
+
+#footer  {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    list-style: "\2714\00A0";
+}
+
+ul#footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+li#footer {
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+a#footer {
+    font-family: "oswald";
+    color: black;
+    text-decoration: none;
+}
+
+a#footer:hover {
+    font-size: 22px;
+    transition: 0.2s;
+    cursor: pointer;
+    color: darkred;
+}
+
+img#footer {
+    width: 20px;
+    margin: 0px;
+    padding-top: 5px;
+}
+

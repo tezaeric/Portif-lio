@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "idroid";
+    src: url(../fontes/idroid.otf);
+}
+
+@font-face {
+    font-family: "oswald";
+    src: url(../fontes/oswald.ttf);
+}
+
+iframe {
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, black, rgb(77, 0, 80));
+    margin: 0px;
+}
+
+div.body {
+    padding: 10px 20px 10px 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+div.body {
+    max-width: 50%;
+    margin:auto;
+    box-shadow: 2px 2px 6px black;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to right, black, #204);
+    width: 100%;
+    
+}
+
+header > h1 {
+    color: white;
+    margin: 0px;
+    font-family: "idroid";
+    text-shadow: black 1px 2px 2px 5px;
+    font-size: 20px;
+    padding: 0px;
+    border: 0px;
+}
+
+h1#pp {
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    font-family: "idroid";
+    text-align: center;
+    font-weight: normal;
+    background-image: linear-gradient(to right, black, #204);
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+}

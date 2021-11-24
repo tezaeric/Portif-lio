@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, black, rgb(77, 0, 80));
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(77, 0, 80);
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 10px;
+    color: rgb(247, 0, 255);
+}
+
+fieldset {
+    border: 3px solid rgb(77, 0, 80);
+}
+
+legend {
+    border: 1px solid rgb(77, 0, 80);
+    padding: 10px;
+    width: 20%;
+    font-size: 17px;
+    text-align: center;
+    background-color: rgb(77, 0, 80);    border-radius: 8px;
+}
+
+legend:hover {
+    background-image: linear-gradient(to right,rgb(69, 0, 71), rgb(59, 1, 61));
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#submit {
+    background-image: linear-gradient(to right,rgb(69, 0, 71), rgb(59, 1, 61));
+
+    width: 50%;
+    font-weight: bold;
+    border: none;
+    padding: 15px 8px 15px 5px;
+    margin-left: 1.5%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right,rgb(69, 0, 71), rgb(0, 0, 0));
+}
+
+#voltar {
+    background-image: linear-gradient(to right,rgb(69, 0, 71), rgb(59, 1, 61));
+    width: 45%;
+    max-width: 45%;
+    padding: 15px 8px 15px 5px;
+    margin-left: 1%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+}
+
+#voltar:hover {
+    background-image: linear-gradient(to right, rgb(69, 0, 71), rgb(5, 0, 5));
+}
+
+img#form {
+    border: none;
+    padding-right: 7px;
+    margin: 0px;
+    font-size: 20px;
+}
